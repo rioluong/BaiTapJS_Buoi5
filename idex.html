@@ -126,7 +126,7 @@
                 data-bs-target="#flush-collapseTwo"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo">
-                <i class="fa-solid fa-user-pen p-1 fs-2"></i>
+                <i class="fa-solid fa-bolt p-1 fs-1"></i>
                 <b> Tính tiền điện</b>
               </button>
             </h2>
@@ -164,153 +164,136 @@
                   </p>
                 </div>
                 </div>
-                <!-- end bài tập 2 -->
-                <!-- bài tập 3 : tính tiền thuế  -->
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseThree"
-                      >
-                        💰 Tính thuế thu nhập cá nhân
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseThree"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="inner-accordion-body d-flex">
-                          <div class="mb-3 w-50 me-4">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-name"
-                              class="form-control"
-                              placeholder="Nhập họ và tên"
-                            />
-                          </div>
-                          <div class="mb-3 w-50 me-4">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-tongThuNhapNam"
-                              class="form-control"
-                              placeholder="Tổng thu nhập năm "
-                            />
-                          </div>
-                          <div class="mb-3 w-50 me-4">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-user"
-                              class="form-control"
-                              placeholder="Số người phụ thuộc "
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="btn px-4 py-2 text-white bg-primary txt-btn3"
-                          id=""
-                        >
-                          Tính tiền thuế
-                        </button>
-                        <p
-                          class="w-100 mt-3 p-3 bg-success bg-opacity-50 rounded-2 txt-ketQua3"
-                          id=""
-                        >
-                          <i class="fa-solid fa-circle-arrow-right fs-5 text-light"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End: Tính thuế thu nhập cá nhân -->
-          
-                  <!-- Start: Tính tiền cáp -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseThree"
-                      >
-                        🕸️ Tính tiền cáp
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseFour"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="inner-accordion-body row row-cols-3">
-                          <div class="mb-3 w-25 col">
-                            <select
-                              onchange="myFunc()"
-                              class="form-control col"
-                              name=""
-                              id="txt-select"
-                            >
-                              <option value="">Chọn loại khách hàng</option>
-                              <option value="user">Nhà dân</option>
-                              <option value="company">Doanh nghiệp</option>
-                            </select>
-                          </div>
-                          <div class="mb-3 w-25 px-3 col">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-maKhachHang"
-                              class="form-control txt-form-input"
-                              placeholder="Nhập mã khách hàng"
-                            />
-                          </div>
-                          <div class="mb-3 w-25 col">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-soKenh"
-                              class="form-control txt-form-input txt-soKenhDoanhNghiep"
-                              placeholder="Số kênh cao cấp"
-                            />
-                          </div>
-                          <div class="mb-3 w-25 col">
-                            <input
-                              type="text"
-                              name=""
-                              id="txt-soKetNoi"
-                              class="form-control txt-form-input"
-                              placeholder="Số kết nối"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="btn px-4 py-2 text-white bg-primary txt-btn4"
-                          id=""
-                        >
-                          Tính tiền cáp
-                        </button>
-                        <p
-                          class="w-100 mt-3 p-3 bg-success bg-opacity-50 rounded-2 txt-ketQua4"
-                          id=""
-                        >
-                          <i class="fa-solid fa-circle-arrow-right fs-5 text-light"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End: Tính tiền cáp -->
+                
       </div>
+      <!-- end bài tập 2 -->
+      <!-- bài tập 3 : tính tiền thuế  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree">
+              <i class="fa-solid fa-hand-holding-dollar fs-1 p-1"></i>
+              <b> Tính tiền thuế</b>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="txt-hoTen"
+                  aria-describedby="helpId"
+                  placeholder="Nhập họ tên" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="txt-thuNhap"
+                  aria-describedby="helpId"
+                  placeholder="Tổng thu nhập năm" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="txt-soNguoi"
+                  aria-describedby="helpId"
+                  placeholder="Số người phụ thuộc" />
+              </div>
+              <button class="btn btn-primary rounded-3 mb-3 txt-btn3">
+                Tính tiền thuế
+              </button>
+              <p
+                class="p-3 bg-success text-dark bg-opacity-50 rounded-3 txt-ketQua3">
+                <i class="fa-solid fa-circle-arrow-right text-light"></i>
+              </p>
+            </div>
+        </div>
+        </div>
+<!-- end  bài tập 3  -->
+<!-- bài tập 4 : tính tiền cáp  -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour"
+          aria-expanded="false"
+          aria-controls="flush-collapseFour">
+          <i class="fa-solid fa-network-wired p-1 fs-1"></i>
+          <b> Tính tiền cáp </b>
+        </button>
+      </h2>
+      <div
+        id="flush-collapseFour"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div class="mb-3">
+                <select
+                  onchange="myFunc()"
+                  class="form-control col"
+                  name=""
+                  id="txt-select"
+                >
+                  <option value="">Chọn loại khách hàng</option>
+                  <option value="user">Nhà dân</option>
+                  <option value="company">Doanh nghiệp</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name=""
+                  id="txt-maKhachHang"
+                  class="form-control txt-form-input"
+                  placeholder="Nhập mã khách hàng"
+                />
+              </div>
+              <div class="mb-3 ">
+                <input
+                  type="text"
+                  name=""
+                  id="txt-soKenh"
+                  class="form-control txt-form-input txt-soKenhDoanhNghiep"
+                  placeholder="Số kênh cao cấp"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name=""
+                  id="txt-soKetNoi"
+                  class="form-control txt-form-input"
+                  placeholder="Số kết nối"
+                />
+              </div>
+              <button class="btn btn-primary mb-3 txt-btn4">Tính tiền cáp</button>
+              <p class="p-3 text-dark bg-opacity-50 bg-success rounded-3 txt-ketQua4">
+                <i class="fa-solid fa-circle-arrow-right text-light"></i>
+              </p>
+            </div>
+          
     </div>
+    </div>
+    <!-- End bài tập 4 -->
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

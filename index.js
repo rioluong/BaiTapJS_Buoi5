@@ -53,4 +53,52 @@ var xetDiem = "";
         "vn-VN"
       ).format(tong)} VNĐ `;
     };
-//TÍNH TIỀN CÁP
+//TÍNH TIỀN THUẾ
+$(".txt-btn3").onclick = function() {
+    var hoTen = $('#txt-hoTen');
+    var thuNhap = $('#txt-thuNhap').value * 1;
+    var soNguoi = $('#txt-soNguoi').value * 1;
+    var tong = 0;
+    var ketQua = $('.ketQua3');
+
+}
+
+
+
+// TÍNH TIỀN CÁP
+$(".txt-btn4").onclick = () => {
+    var select = $("#txt-select").value;
+  
+    var maKh = $("#txt-maKhachHang").value * 1;
+    var maSoKenh = $("#txt-soKenh").value * 1;
+    var soKetNoi = $("#txt-soKetNoi").value * 1;
+    var ketQua = $(".txt-ketQua4");
+  
+    var tinhTien = 0;
+    var giaTienMacDinhNha = 25000;
+    var giaTienMacDinhCongTy = 90000;
+   
+    if (select === "user" && maSoKenh === 0) {
+      tinhTien = giaTienMacDinhNha;
+    } else if (select === "user" && maSoKenh >= 1) {
+      tinhTien = giaTienMacDinhNha + maSoKenh * 7500;
+    } else if (select === "company" && soKetNoi > 10) {
+      tinhTien =
+        giaTienMacDinhCongTy + (soKetNoi * 5000 - 50000) + maSoKenh * 50000;
+    } else if (select === "company" && soKetNoi <= 10) {
+      tinhTien = giaTienMacDinhCongTy;
+    }
+    ketQua.innerHTML = ` <i class="fa-solid fa-circle-arrow-right fs-5 text-light"></i> Mã khách hàng ${maKh}; Tiền cáp ${new Intl.NumberFormat(
+      "vn-VN"
+    ).format(tinhTien)} VNĐ `;
+  };
+  // onChange
+  var myFunc = () => {
+    var select = $("#txt-select").value;
+    var soKetNoi = $("#txt-soKetNoi");
+    if (select === "company") {
+      soKetNoi.style.display = "block";
+    } else {
+      soKetNoi.style.display = "none";
+    }
+  };
